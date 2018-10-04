@@ -1,0 +1,28 @@
+{
+  "name": "langcheck",
+  "version": "2.0.0",
+  "description": "NodeJS language detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Jay Goodfellow",
+    "email": "j.goodfellow@arcane.ws"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArcaneDigital/langcheck"
+  },
+  "license": "MIT",
+  "keywords": [
+    "language",
+    "detection",
+    "classifier",
+    "machine lerning",
+    "n-grams"
+  ],
+  "dependencies": {
+    "classificator": "0.3.2"
+  }
+}
