@@ -6,7 +6,7 @@ const classifier = bayes.fromJson(
 );
 
 module.exports = async string => {
-  if (!string) return;
+  if (!string) return [];
   const results = classifier.categorize(string);
   if (!results || !results.likelihoods || results.likelihoods.length == 0)
     return [];
