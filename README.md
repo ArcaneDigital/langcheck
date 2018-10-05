@@ -5,7 +5,7 @@ Language detection module for Node with support for 57 languages, async/await an
 ## Install
 
 ```
-npm install langhcheck --save
+npm install langcheck --save
 ```
 
 ## Usage
