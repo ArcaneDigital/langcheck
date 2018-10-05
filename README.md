@@ -25,6 +25,12 @@ const langcheck = require("langcheck");
 })();
 ```
 
+**Result**
+
+```json
+[{ "code": "en", "name": "English", "confidence": "94.70" }]
+```
+
 #### Promises
 
 ```javascript
@@ -33,6 +39,12 @@ const langcheck = require("langcheck");
 langcheck(`The quick brown fox jumps over the lazy dog`).then(lang => {
   console.log(lang);
 });
+```
+
+**Result**
+
+```json
+[{ "code": "en", "name": "English", "confidence": "94.70" }]
 ```
 
 ## Langauges

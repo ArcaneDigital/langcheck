@@ -1,6 +1,6 @@
 {
   "name": "langcheck",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "NodeJS language detector",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,8 @@
     "detection",
     "classifier",
     "machine lerning",
-    "n-grams"
+    "n-grams",
+    "langcheck"
   ],
   "dependencies": {
     "classificator": "0.3.2"
