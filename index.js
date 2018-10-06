@@ -1,12 +1,23 @@
 const bayes = require("classificator");
+
 const fs = require("fs");
 const langs = JSON.parse(fs.readFileSync(__dirname + "/langs.json").toString());
 const classifier = bayes.fromJson(
   fs.readFileSync(__dirname + "/classifier.json").toString()
 );
+classifier.tokenizer = text => {
+  const tokens = text.split(/\s+/).reduce((acc, cur) => {
+    const sanitized = cur.replace(/[&\/\\#,+\(\)$~%\.!^'"\;:*?\[\]<>{}]/g, "");
+    if (sanitized.length > 0) acc.push(sanitized);
+    return acc;
+  }, []);
+  console.log(tokens);
+  return tokens;
+};
 
 module.exports = async string => {
   if (!string) return [];
+
   const results = classifier.categorize(string);
   if (!results || !results.likelihoods || results.likelihoods.length == 0)
     return [];
