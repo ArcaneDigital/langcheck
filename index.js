@@ -11,7 +11,6 @@ classifier.tokenizer = text => {
     if (sanitized.length > 0) acc.push(sanitized);
     return acc;
   }, []);
-  console.log(tokens);
   return tokens;
 };
 

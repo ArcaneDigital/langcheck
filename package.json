@@ -1,7 +1,7 @@
 {
   "name": "langcheck",
-  "version": "2.2.2",
-  "description": "NodeJS language detector",
+  "version": "2.3.2",
+  "description": "Machine Learning based language detection module for Node with support for 57 languages, async/await and promises.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
